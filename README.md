@@ -9,6 +9,13 @@ Snake Game is a classic arcade game designed for a Linux-based operating system,
 - MZ_APO libraries for controlling peripherals (LEDs, knobs, LCD display, etc.)
 - MZ_APO microcontroller
 
+## Installation and Execution
+1. Install required MZ_APO libraries and dependencies.
+2. Compile and run the Snake Game code using a C compiler in a Linux environment (refer to Makefile).
+3. Ensure MZ_APO board is connected and functional, updating the board's IP address in the Makefile.
+4. Execute the game by running `make run` in the terminal (within the project folder).
+5. Use MZ_APO knobs to control the snake(s) and navigate the menu during gameplay.
+
 ## Game Components
 1. **Game Field**: Rectangular area (480x320 pixels) displaying the snake and apples.
 2. **Snake**: Player-controlled entity that grows longer by consuming apples.
@@ -23,7 +30,7 @@ The code is organized into several functions, each handling specific aspects of 
 
 - `draw_home_page`: Displays the menu screen for player and difficulty selection.
 - `draw_game_page`: Manages the game field, snake movement, apple spawning, collision detection, and scoring.
-- ... (Other functions responsible for drawing, computation, initialization, and game flow)
+- ... (Other functions responsible for drawing, computation, initialization, and game flow. Can be found in the Documentation.docx)
 
 ## Game Controls
 The game utilizes the MZ_APO board's knobs for player interaction:
@@ -45,13 +52,6 @@ The game utilizes the MZ_APO board's knobs for player interaction:
 - **Two-player mode**: Enables simultaneous competition on the same field.
 - **Difficulty levels**: Offers varying gameplay challenges affecting snake speed.
 - **LED countdown**: Indicates time remaining before a new apple appears.
-
-## Installation and Execution
-1. Install required MZ_APO libraries and dependencies.
-2. Compile and run the Snake Game code using a C compiler in a Linux environment (refer to Makefile).
-3. Ensure MZ_APO board is connected and functional, updating the board's IP address in the Makefile.
-4. Execute the game by running `make run` in the terminal (within the project folder).
-5. Use MZ_APO knobs to control the snake(s) and navigate the menu during gameplay.
 
 ## Documentation
 For more detailed information, refer to the [Documentation.docx](Documentation.docx) file.
